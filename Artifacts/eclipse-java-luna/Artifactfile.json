@@ -10,6 +10,6 @@
   "iconUri":"https://github.com/chocolatey/chocolatey/raw/master/docs/logo/chocolateyicon.gif",
   "targetOsType": "Windows",
    "runCommand": {
-    "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./ChocolateyPackageInstaller.ps1')]"
+    "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File ChocolateyPackageInstaller.ps1"
     }
 }
