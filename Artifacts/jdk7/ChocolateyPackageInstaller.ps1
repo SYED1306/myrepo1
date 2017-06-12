@@ -224,7 +224,7 @@ function InstallPackages
 
         WriteLog "Installing package: $package ..."
 
-       /## Install git via chocolatey.
+       ##/ Install git via chocolatey.
         choco install $package --force --yes --acceptlicense --verbose --allow-empty-checksums | Out-Null  
         if (-not $?)
         {
