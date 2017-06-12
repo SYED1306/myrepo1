@@ -199,6 +199,7 @@ function InstallChocolatey
 # Notes:
 #  - N/A.
 #
+$package = "eclipse-java-luna"
 
 function InstallPackages
 {
