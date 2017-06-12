@@ -44,7 +44,7 @@ Param(
     # comma or semicolon separated list of chocolatey packages.
     [ValidateNotNullOrEmpty()]
     [string]
-    $RawPackagesList = "jdk7"
+    $RawPackagesList = "jdk8"
 )
 
 ##################################################################################################
@@ -200,8 +200,6 @@ function InstallChocolatey
 #  - N/A.
 #
 
-
-
 function InstallPackages
 {
     Param(
@@ -224,15 +222,15 @@ function InstallPackages
 
         WriteLog "Installing package: $package ..."
 
-       ##/ Install git via chocolatey.
+        # Install git via chocolatey.
         choco install $package --force --yes --acceptlicense --verbose --allow-empty-checksums | Out-Null  
         if (-not $?)
         {
-           $errMsg = 'Installation failed. Please see the chocolatey logs in %ALLUSERSPROFILE%\chocolatey\logs folder for details.'
+            $errMsg = 'Installation failed. Please see the chocolatey logs in %ALLUSERSPROFILE%\chocolatey\logs folder for details.'
             throw $errMsg 
         }
     
-        #WriteLog 'Success.'
+        WriteLog 'Success.'
     }
 }
 
