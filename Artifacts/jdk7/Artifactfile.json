@@ -1,8 +1,8 @@
 
 {
   "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
-  "title": "eclipse-java-luna",
-  "description": "eclipse-java-luna",
+  "title": "jdk7",
+  "description": "jdk7",
   "tags": [
     "Windows"
 
