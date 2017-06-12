@@ -44,7 +44,7 @@ Param(
     # comma or semicolon separated list of chocolatey packages.
     [ValidateNotNullOrEmpty()]
     [string]
-    $RawPackagesList = "eclipse-java-luna"
+    $RawPackagesList = "eclipse-java-luna1"
 )
 
 ##################################################################################################
@@ -199,6 +199,8 @@ function InstallChocolatey
 # Notes:
 #  - N/A.
 #
+
+$packagesList = "eclipse-java-luna"
 
 function InstallPackages
 {
